@@ -212,7 +212,8 @@ a {
 }
 @media (max-width: 768px) {
     .count-down {
-        height: 22vh;
+        margin-top: 18rem;
+        height: 27vh;
     }
 }
 .count-down .over {
@@ -234,6 +235,11 @@ a {
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+    .count-down .container .units {
+        top: 40%;
+    }
 }
 .count-down .container .units .unit {
     width: 100px;
@@ -272,6 +278,11 @@ a {
     border-top: 2px solid var(--one-color);
     transition: 0.3s;
 }
+@media (max-width: 768px) {
+    .count-down .container .units .unit span:last-child {
+        font-size: 0.7rem;
+    }
+}
 .count-down .container .units .unit:hover span:last-child {
     border-top: 2px solid white;
 }
@@ -288,7 +299,9 @@ a {
     .count-down .container .invite p {
         font-weight: bold;
         width: 264px;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.6px;
+        top: 85%;
     }
 }
     /* End Count Down */
