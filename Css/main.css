@@ -202,13 +202,18 @@ a {
 
     /* Start Count Down */
 .count-down {
-    margin-top: 25rem;
+    margin-top: 22rem;
     margin-bottom: 60px;
     position: relative;
     background-image: url(../Img/wallpaperflare1.png);
     background-size: cover;
     height: 50vh;
     width: 100%;
+}
+@media (max-width: 768px) {
+    .count-down {
+        height: 22vh;
+    }
 }
 .count-down .over {
     position: absolute;
