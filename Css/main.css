@@ -203,12 +203,12 @@ a {
     /* Start Count Down */
 .count-down {
     margin-top: 22rem;
-    margin-bottom: 60px;
     position: relative;
     background-image: url(../Img/wallpaperflare1.png);
     background-size: cover;
     height: 50vh;
     width: 100%;
+    border-bottom: 1px solid var(--one-color);
 }
 @media (max-width: 768px) {
     .count-down {
@@ -305,3 +305,45 @@ a {
     }
 }
     /* End Count Down */
+
+    /* Start Footer */
+    .footer {
+        background-color: var(--two-color);
+    }
+    .footer .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 1rem 0 1rem;
+    }
+    .footer .container h2 {
+        color: var(--one-color);
+    }
+    @media (max-width: 768px) {
+        .footer .container h2 {
+            font-size: 1.2rem;
+        }
+    }
+    .footer .container .social {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        gap: 1rem;
+    }
+    .footer .container .social a {
+        color: var(--one-color);
+        font-size: 1.7rem;
+        transition: 0.3s;
+    }
+    .footer .container .social a:hover .face {
+        color: #0088ff
+    }
+    .footer .container .social a:hover .git {
+        color: #9354AD;;
+    }
+    .footer .container .social a:hover .insta {
+        color: #d18202;
+    }
+    /* End Footer */
