@@ -61,7 +61,7 @@ a {
     }
 }
 /* End Global Rules */
-.scrolling {
+/* .scrolling {
     background-color: #1a57ff;
     padding: 13px;
     border-radius: 15px;
@@ -86,7 +86,7 @@ a {
 }
 .show {
     bottom: 18px;
-}
+} */
 /* Start Lnading */
 .landing {
     background-image: url(../Img/overlay\ 2.jpeg);
@@ -245,6 +245,9 @@ a {
     width: 100%;
     border-bottom: 1px solid var(--one-color);
     z-index: 100;
+    -webkit-box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+    -moz--webkit-box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
 }
 @media (max-width: 768px) {
     .count-down {
@@ -281,9 +284,9 @@ a {
     width: 100px;
     text-align: center;
     border-radius: 6px;
-    border: 2px solid #FF8700;
+    border: 2px solid var(--one-color);
     cursor: pointer;
-    color: #FF8700;
+    color: var(--one-color);
 }
 @media (max-width: 768px) {
     .count-down .container .units .unit {
@@ -301,7 +304,7 @@ a {
 .count-down .container .units .unit span:first-child {
     padding: 15px;
     font-weight: bold;
-    color: #FF8700;
+    color: var(--one-color);
     font-size: 40px;
     transition: 0.3s;
 }
@@ -314,7 +317,7 @@ a {
     }
 }
 .count-down .container .units .unit span:last-child {
-    border-top: 2px solid #FF8700;
+    border-top: 2px solid var(--one-color);
     transition: 0.3s;
 }
 @media (max-width: 768px) {
@@ -327,7 +330,7 @@ a {
 }
 .count-down .container .invite p {
     position: absolute;
-    color: #FF8700;
+    color: var(--one-color);
     top: 78%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -348,41 +351,87 @@ a {
     /* Start Footer */
     .footer {
         background-color: var(--two-color);
+        margin-top: 80px;
     }
-    .footer .container {
+    /* .footer {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         gap: 1.2rem;
         padding: 1rem 0 1rem;
+    } */
+    .footer .head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.8rem 0;
+        border-bottom: 1px solid var(--one-color);
     }
-    .footer .container h2 {
+    .footer .head h2 {
         color: var(--one-color);
+        font-family: 'Baloo 2', cursive;
+        font-size: 1.2rem
     }
     @media (max-width: 768px) {
-        .footer .container h2 {
-            font-size: 1.2rem;
+        .footer .head h2 {
+            font-size: 1rem;
         }
     }
-    .footer .container .social {
+    .footer .tel {
         display: flex;
         align-items: center;
-        justify-items: center;
-        gap: 1rem;
+        justify-content: center;
+        color: var(--one-color);
+        gap: 0.5rem;
     }
-    .footer .container .social a {
+    .footer .social {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.5rem 0.8rem;
+        color: var(--one-color);
+    }
+    .footer .social .link  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    .footer .social .tel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .footer .social .link a {
         color: var(--one-color);
         font-size: 1.7rem;
         transition: 0.3s;
     }
-    .footer .container .social a:hover .face {
+    @media (max-width: 768px) {
+        .footer .social .link a {
+            font-size: 1.5rem;
+        }
+    }
+    .footer .social .link a:hover .face {
         color: #0088ff
     }
-    .footer .container .social a:hover .git {
+    .footer .social .link a:hover .git {
         color: #9354AD;;
     }
-    .footer .container .social a:hover .insta {
+    .footer .social .link a:hover .insta {
         color: #d18202;
+    }
+    .footer .social p {
+        color: var(--one-color);
+    }
+    @media (max-width: 768px) {
+        .footer .social p {
+            font-size: 0.7rem;
+        }
     }
     /* End Footer */
