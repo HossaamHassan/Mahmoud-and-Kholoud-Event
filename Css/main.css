@@ -36,6 +36,12 @@ li {
 a {
     text-decoration: none;
 }
+/* Min-Small 
+@media(min-width: 320px) {
+    .container {
+        width: 300px;
+    }
+} */
 /* Small  */
 @media(min-width: 768px) {
     .container {
@@ -90,7 +96,7 @@ a {
     background-color: #eee;
     z-index: 100;
     margin-top: 2rem;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     -webkit-box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
     -moz--webkit-box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
     box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
@@ -102,11 +108,11 @@ a {
     }
 }
 .landing .container .poster .info {
-    padding: 2rem 7rem;
+    padding: 2rem 6rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background-color: #520000;
+    background-color: var(--two-color);
 }
 @media (max-width: 768px) {
     .landing .container .poster .info {
@@ -148,7 +154,7 @@ a {
     background-size: cover;
     width: 640px;
     height: 360px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
 @media (max-width: 768px) {
     .landing .container .poster .pic {
@@ -166,6 +172,9 @@ a {
     .landing .container .poster .calender {
         padding: 2rem 1rem;
     }
+}
+.landing .container .poster .calender .when .data {
+    padding: 0 2rem;
 }
 .landing .container .poster .calender .when:not(:last-child) {
     border-bottom: solid rgb(0 0 0 / 25%) 1px;
@@ -212,7 +221,7 @@ a {
 }
 @media (max-width: 768px) {
     .count-down {
-        margin-top: 18rem;
+        margin-top: 5.5rem;
         height: 27vh;
     }
 }
@@ -220,7 +229,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #1a2238b3;;
+    background-color: #1a2238b3;
     width: 100%;
     height: 100%;
 }
