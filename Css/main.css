@@ -281,9 +281,9 @@ a {
     width: 100px;
     text-align: center;
     border-radius: 6px;
-    border: 2px solid var(--one-color);
+    border: 2px solid #FF8700;
     cursor: pointer;
-    color: var(--one-color);
+    color: #FF8700;
 }
 @media (max-width: 768px) {
     .count-down .container .units .unit {
@@ -301,7 +301,7 @@ a {
 .count-down .container .units .unit span:first-child {
     padding: 15px;
     font-weight: bold;
-    color: var(--one-color);
+    color: #FF8700;
     font-size: 40px;
     transition: 0.3s;
 }
@@ -314,7 +314,7 @@ a {
     }
 }
 .count-down .container .units .unit span:last-child {
-    border-top: 2px solid var(--one-color);
+    border-top: 2px solid #FF8700;
     transition: 0.3s;
 }
 @media (max-width: 768px) {
@@ -327,7 +327,7 @@ a {
 }
 .count-down .container .invite p {
     position: absolute;
-    color: var(--one-color);
+    color: #FF8700;
     top: 78%;
     left: 50%;
     transform: translate(-50%, -50%);
