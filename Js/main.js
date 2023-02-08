@@ -1,7 +1,7 @@
 /* Start ScrollToTop */
 let toTop = document.querySelector(".scrolling");
 window.onscroll = function () {
-    if (window.scrollY >= 200) {
+    if (window.scrollY >= 180) {
         toTop.classList.add("show");
     } else {
         toTop.classList.remove("show");
