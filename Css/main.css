@@ -61,7 +61,32 @@ a {
     }
 }
 /* End Global Rules */
-
+.scrolling {
+    background-color: #1a57ff;
+    padding: 13px;
+    border-radius: 15px;
+    color: white;
+    position: fixed;
+    right: 20px;
+    bottom: -70px;
+    z-index: 101;
+    transition: 0.3s;
+    font-size: 1.2rem;
+    cursor: pointer;
+    animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -webkit-animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -moz-animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -o-animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+@media (max-width: 768px) {
+    .scrolling {
+        right: 15px;
+        font-size: 1rem;
+    }
+}
+.show {
+    bottom: 10px;
+}
 /* Start Lnading */
 .landing {
     background-image: url(../Img/overlay\ 2.jpeg);
@@ -173,9 +198,6 @@ a {
         padding: 2rem 1rem;
     }
 }
-.landing .container .poster .calender .when .data {
-    padding: 0 2rem;
-}
 .landing .container .poster .calender .when:not(:last-child) {
     border-bottom: solid rgb(0 0 0 / 25%) 1px;
 }
@@ -197,6 +219,10 @@ a {
     gap: 0.9rem;
     flex-direction: column;
     margin-bottom: 1rem;
+    padding: 0 2rem;
+}
+.landing .container .poster .calender .when .data .date {
+    width: 275px;
 }
 .landing .container .poster .calender .when .data ul {
     display: flex;
@@ -221,7 +247,7 @@ a {
 }
 @media (max-width: 768px) {
     .count-down {
-        margin-top: 5.5rem;
+        margin-top: 8rem;
         height: 27vh;
     }
 }
@@ -332,7 +358,7 @@ a {
     }
     @media (max-width: 768px) {
         .footer .container h2 {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
     }
     .footer .container .social {

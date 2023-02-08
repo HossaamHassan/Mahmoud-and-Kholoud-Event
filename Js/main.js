@@ -1,4 +1,20 @@
-//* Start countDown */
+/* Start ScrollToTop */
+let toTop = document.querySelector(".scrolling");
+window.onscroll = function () {
+    if (window.scrollY >= 200) {
+        toTop.classList.add("show");
+    } else {
+        toTop.classList.remove("show");
+    }
+};
+toTop.onclick = function () {
+    window.scrollTo ({
+        top: 0,
+        behavior: "smooth",
+    });
+};
+/* End ScrollToTop */
+/* Start countDown */
 let countDownDate = new Date("Feb 23, 2023 18:0:0").getTime();
 // console.log(countDownDate);
 let counter = setInterval(() => {
